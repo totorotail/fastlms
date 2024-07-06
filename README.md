@@ -1,33 +1,32 @@
 # 미니 LMS 프로젝트
+<img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/java-%23ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"> <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white"> <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"> <img src="https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=MyBatis&logoColor=white"> <img src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white">
+<br/><br/>
 
-이 프로젝트는 미니 LMS(학습 관리 시스템)의 기능을 구현합니다.
+## 📜프로젝트 소개
+- 미니 LMS (학습 관리 시스템)의 기능 구현
+<br/><br/>
 
-### 기존에 존재하던 기능
+## ⭐주요 기능
 
-- 회원가입 및 가입 인증메일 전송
-- 로그인 및 로그아웃
-- 비밀번호 찾기(비밀번호 초기화 기능)
-- 관리자(백오피스) 회원 관리
-- 관리자(백오피스) 카테고리 관리
-- 관리자(백오피스) 강좌 관리
+✅ 회원 가입 및 로그인, 로그아웃
 
-### 추가 구현한 기능
+회원가입 기능
+회원 가입 시 이메일 인증을 하여 계정 활성화
+로그인, 로그아웃 기능
+비밀번호 초기화 기능
+회원의 강좌 수강 및 수강 취소 기능
+Spring security를 사용 권한 부여
 
-- 회원 로그인시 로그인 히스토리(로그) 기능
-- 관리자 회원 상세 정보에 로그인 목록 보기 기능
-- 배너관리(백오피스 기능)
-- 프론트 배너 노출 기능
+✅ 관리자 기능
 
-#### 로그인 히스토리(로그) 기능
+회원 조회, 상세보기, 패스워드 초기화 기능
+회원 로그인 시 로그인 히스토리 기능
+관리자 회원 상세 정보에 로그인 목록 보기 기능
+카테고리 생성, 수정 삭제 기능
+배너 생성, 수정, 삭제 기능
+강좌 조회, 생성, 수정, 삭제 기능
 
-- 프론트 화면에서 회원이 정상적으로 로그인 한 경우, 로그인 히스토리 테이블(login_history)에 로그인 아이디와 로그인 날짜, 접속 IP, 접속 UserAgent를 저장합니다.
+✅ 배너 기능
 
-#### 배너관리(백오피스 기능)
-
-- 배너 등록 기능은 다음과 같은 정보를 저장합니다:
-  - 배너 이미지 파일
-  - 배너 Alter텍스트(대체 텍스트)
-  - 배너 링크 했을때 이동하는 URL정보
-  - 클릭시 Target정보(새창인지, 현재창 이동인지)
-  - 정렬순서
-  - 프론트 표시 여부 정보
+등록된 배너는 메인화면에 디스플레이
+등록된 배너를 클릭하면, 관련한 강좌 페이지로 이동
